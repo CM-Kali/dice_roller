@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:background="#6B8E23"
+
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/image_dice_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/las_vegas"
+
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <View
+
+            android:layout_width="40dp"
+            android:layout_height="2dp" />
+
+
+        <ImageView
+            android:id="@+id/image_leftDice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            app:srcCompat="@drawable/dice1"
+
+
+            />
+        <View
+            android:layout_marginLeft="50dp"
+            android:layout_width="40dp"
+            android:layout_height="2dp" />
+
+
+        <ImageView
+            android:id="@+id/image_RightDice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            app:srcCompat="@drawable/dice2" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Roll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#5462B1"
+            android:text="Roll"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
